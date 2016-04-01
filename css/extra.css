@@ -1485,11 +1485,11 @@ body {
 }
 body {
     background-color: #6a707c;
-    background-image: url("assets/css/images/overlay.png"), url("images/bg.jpg");
+    /*background-image: url("assets/css/images/overlay.png"), url("images/bg.jpg");
     background-size: 100px 100px, 100% auto;
     background-repeat: repeat, no-repeat;
     background-attachment: scroll, scroll;
-    background-position: top left, center 0px;
+    background-position: top left, center 0px;*/
 }
 body.is-loading *,
 body.is-loading *:before,
@@ -2251,11 +2251,17 @@ header.major {
     padding: 6.5em 3em 4.5em 3em;
     text-align: center;
     background-color: #8ac48f;
-    background-image: url("assets/css/images/overlay.png"), url("assets/css/images/header-bg.svg"), -moz-linear-gradient(45deg, #8ac48f 20%, #e4984e 80%);
-    background-image: url("assets/css/images/overlay.png"), url("assets/css/images/header-bg.svg"), -webkit-linear-gradient(45deg, #8ac48f 20%, #e4984e 80%);
-    background-image: url("assets/css/images/overlay.png"), url("assets/css/images/header-bg.svg"), -ms-linear-gradient(45deg, #8ac48f 20%, #e4984e 80%);
-    background-image: url("assets/css/images/overlay.png"), url("assets/css/images/header-bg.svg"), linear-gradient(45deg, #8ac48f 20%, #e4984e 80%);
-    background-size: 100px 100px, cover, cover;
+    margin : 0;
+    border: 0px;
+    
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8ac48f+0,e4984e+100 */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background: #8ac48f; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #8ac48f 0%, #e4984e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  #8ac48f 0%,#e4984e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  #8ac48f 0%,#e4984e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ac48f', endColorstr='#e4984e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     background-position: center, center, center;
 }
 header.major h2:after {
@@ -2972,11 +2978,11 @@ body.is-loading #banner footer {
     #main .cta {
         padding: 4em 1.5em 2em 1.5em;
         background-color: #6a707c;
-        background-image: url("assets/css/images/overlay.png"), url("assets/css/images/bg.jpg");
+        /*background-image: url("assets/css/images/overlay.png"), url("assets/css/images/bg.jpg");
         background-size: 100px 100px, cover;
         background-repeat: repeat, no-repeat;
         background-attachment: scroll, scroll;
-        background-position: top left, center bottom;
+        background-position: top left, center bottom;*/
     }
 }
 #footer {

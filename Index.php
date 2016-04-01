@@ -40,8 +40,8 @@
 				  <section class="feature2">
 					 <span class="icon major fa-envelope"></span>
 					<h3>Adatok</h3>
-					<p>Név: </p><input name="name" class="myinput">
-					<p>E-mail: (diszkréten kezeljük, csak az utazás szervezéséhez, és rendkívüli esetben használjuk)</p><input name="email" class="myinput">
+					<p>Név: </p><input name="name" class="myinput" type="text">
+					<p>E-mail: (diszkréten kezeljük, csak az utazás szervezéséhez, és rendkívüli esetben használjuk)</p><input name="email" class="myinput" type="email">
 					
                      <span class="icon major fa-car"></span>
                      <h3>Utazás</h3>
@@ -115,7 +115,7 @@
                     <span class="icon major fa-music"></span>
                     <h3>Lagzi</h3>
                     <p>Az este folyamán rock DJ fogja szolgáltatni a zenét. Itt van lehetőséged küldeni nekünk egy számot, így biztosan elérhető lesz, és lejátszuk :)</p>
-                    <input name="song" class="myinput">
+                    <input name="song" class="myinput" type="text">
                     <span class="icon major fa-camera"></span>
                     <h3>Fotó</h3>
                     <p>Az eseményen jelen lesz egy hivatásos fotós, ezért arra kérünk, segítsétsd a munkáját azzal, hogy hagyod érvényesülni, helyet adsz neki a fotózáshoz, még akkor is, ha éppen te magad szerettél volna lőni egy képet. Továbbá kérünk mindenkit, hogy amíg mi nem teszünk fel képet, ne töltsetek fel semmilyen közösségi médiára és portálra képeket, vagy videókat, mindenkivel meg fogjuk osztani az eseményről készült fotókat a maga idejében. Tisztelettel köszönjük!</p>
