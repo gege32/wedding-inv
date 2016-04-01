@@ -1,5 +1,7 @@
 var Site = {
-	init: function(){					
+	init: function(){		
+		$('div.banner').fadeIn();
+					
 		$('div.wrongcode').css('display','none');
 		
 		$('a.submitcode').click(function(){

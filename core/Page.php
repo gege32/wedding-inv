@@ -31,6 +31,7 @@
 		?>
 			<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
 		<?php
 		foreach($this->jsIncludes as $js){ ?>
 			<script src="/js/<?php echo $js; ?>" ></script>

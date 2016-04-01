@@ -38,6 +38,11 @@
                </header>
                <div class="content">
 				  <section class="feature2">
+					 <span class="icon major fa-envelope"></span>
+					<h3>Adatok</h3>
+					<p>Név: </p><input name="name" class="myinput">
+					<p>E-mail: (diszkréten kezeljük, csak az utazás szervezéséhez, és rendkívüli esetben használjuk)</p><input name="email" class="myinput">
+					
                      <span class="icon major fa-car"></span>
                      <h3>Utazás</h3>
 					<span class="custom-dropdown">
@@ -56,7 +61,7 @@
                      <p>Menü:</p>
                      <br>
                      <p>Kérlek, hogyha van bármilyen speciális kívánságod a felszolgált étellel kapcsolatban, itt jelezd (allergia, érzékenység, anti-hús...)</p>
-                     <input class="myinput" name="foodSpeacialNeeds">
+                     <textarea class="myinput biginput" name="foodSpeacialNeeds"></textarea>
                   </section>
 
                </div>
@@ -83,8 +88,39 @@
                   </section>
                </div>
             </section>
+            
+            <section id="four" class="features">
+               <header class="major">
+                  <h2>Szállás</h2>
+                  <p>Elhelyezést az alábbi két szálláson tudunk biztosítani (a következő oldalon dönthetsz, hogy kérsz-e szállást)</p>
+               </header>
+               <div class="content">
+                  <section class="feature2">
+                    <span class="icon major fa-bed"></span>
+					<h3>Szállás</h3>
+					<p>Kérünk, hogy csak abban az esetben folytasd a kitöltést, hogyha biztosan tudo már, hogy kérsz/nem kérsz szállást, mert ezek alapján fogjuk lefoglalni a szükséges mennyiségű férőhelyet!</p>
+					<span class="custom-dropdown">
+						<select class="custom-dropdown__select">
+							<option value="-1">Kérjük válassz...</option>
+							<option value="0">Kérek szállást</option>
+							<option value="1">Nem kérek szállást</option>
+						</select>
+					</span>
+                  </section>
+                  <section class="feature2">
+                    <span class="icon major fa-music"></span>
+                    <h3>Lagzi</h3>
+                    <p>Az este folyamán rock DJ fogja szolgáltatni a zenét. Itt van lehetőséged küldeni nekünk egy számot, így biztosan elérhető lesz, és lejátszuk :)</p>
+                    <input name="song" class="myinput">
+                    <span class="icon major fa-beer"></span>
+                    <h3>Ital</h3>
+                    <p>Az eseményen a Legenda, és a Fóti sörfőzde söreiből, és villányi borvidékhez tartozó Janus Borház boraiból fogyaszthatnak a kedves vendégeink.</p>
+                    <p>Az alkoholmentes italok fogyasztása korlátlanul szintén ingyenes, a röviditalokért a helyszínen kihelyezett becsületkasszába lehet majd adakozni.</p>
+                  </section>
+               </div>
+            </section>
 			
-            <section id="four" class="spotlight">
+            <section id="five" class="spotlight">
                <div class="image"><img src="images/wedring.jpg" alt=""></div>
                <div class="content">
                   <h2>Volutpat ante libero</h2>
@@ -92,7 +128,7 @@
                </div>
             </section>
 			
-            <section id="five" class="spotlight alt">
+            <section id="six" class="spotlight alt">
                <div class="image"><img src="images/wedring.jpg" alt=""></div>
                <div class="content">
                   <h2>Elit auctor tempus</h2>
