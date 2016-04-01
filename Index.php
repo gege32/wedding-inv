@@ -91,14 +91,14 @@
             
             <section id="four" class="features">
                <header class="major">
-                  <h2>Szállás</h2>
-                  <p>Elhelyezést az alábbi két szálláson tudunk biztosítani (a következő oldalon dönthetsz, hogy kérsz-e szállást)</p>
+                  <h2>Szllás + egyéb</h2>
+                  <p></p>
                </header>
                <div class="content">
                   <section class="feature2">
                     <span class="icon major fa-bed"></span>
 					<h3>Szállás</h3>
-					<p>Kérünk, hogy csak abban az esetben folytasd a kitöltést, hogyha biztosan tudo már, hogy kérsz/nem kérsz szállást, mert ezek alapján fogjuk lefoglalni a szükséges mennyiségű férőhelyet!</p>
+					<p>Kérünk, hogy csak abban az esetben folytasd a kitöltést, hogyha biztosan tudod már, hogy kérsz/nem kérsz szállást, mert ezek alapján fogjuk lefoglalni a szükséges mennyiségű férőhelyet! (Az utolsó dátum a pontos létszám leadásához: május 10)</p>
 					<span class="custom-dropdown">
 						<select class="custom-dropdown__select">
 							<option value="-1">Kérjük válassz...</option>
