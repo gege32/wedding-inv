@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+ServerName manager.pr
+DocumentRoot C:/htdocs/manager
+php_value auto_prepend_file "C:/htdocs/manager/setup.php"
+RewriteEngine On
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-F
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/?(thumbnails|public|files|css|font|img|js|pic|plugin|swf|font)/?(.*)
+RewriteRule ^(.*)$ /router.php [L]
+</VirtualHost>
