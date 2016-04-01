@@ -106,16 +106,19 @@
 							<option value="1">Nem kérek szállást</option>
 						</select>
 					</span>
+					<span class="icon major fa-beer"></span>
+                    <h3>Ital</h3>
+                    <p>Az eseményen a Legenda, és a Fóti sörfőzde söreiből, és villányi borvidékhez tartozó Janus Borház boraiból fogyaszthatnak a kedves vendégeink.</p>
+                    <p>Az alkoholmentes italok fogyasztása korlátlanul szintén ingyenes, a röviditalokért a helyszínen kihelyezett becsületkasszába lehet majd adakozni.</p>
                   </section>
                   <section class="feature2">
                     <span class="icon major fa-music"></span>
                     <h3>Lagzi</h3>
                     <p>Az este folyamán rock DJ fogja szolgáltatni a zenét. Itt van lehetőséged küldeni nekünk egy számot, így biztosan elérhető lesz, és lejátszuk :)</p>
                     <input name="song" class="myinput">
-                    <span class="icon major fa-beer"></span>
-                    <h3>Ital</h3>
-                    <p>Az eseményen a Legenda, és a Fóti sörfőzde söreiből, és villányi borvidékhez tartozó Janus Borház boraiból fogyaszthatnak a kedves vendégeink.</p>
-                    <p>Az alkoholmentes italok fogyasztása korlátlanul szintén ingyenes, a röviditalokért a helyszínen kihelyezett becsületkasszába lehet majd adakozni.</p>
+                    <span class="icon major fa-camera"></span>
+                    <h3>Fotó</h3>
+                    <p>Az eseményen jelen lesz egy hivatásos fotós, ezért arra kérünk, segítsétsd a munkáját azzal, hogy hagyod érvényesülni, helyet adsz neki a fotózáshoz, még akkor is, ha éppen te magad szerettél volna lőni egy képet. Továbbá kérünk mindenkit, hogy amíg mi nem teszünk fel képet, ne töltsetek fel semmilyen közösségi médiára és portálra képeket, vagy videókat, mindenkivel meg fogjuk osztani az eseményről készült fotókat a maga idejében. Tisztelettel köszönjük!</p>
                   </section>
                </div>
             </section>
@@ -123,8 +126,8 @@
             <section id="five" class="spotlight">
                <div class="image"><img src="images/wedring.jpg" alt=""></div>
                <div class="content">
-                  <h2>Volutpat ante libero</h2>
-                  <p>Praesent egestas quam at lorem imperdiet lobortis. Mauris condimentum et euismod ipsum, at ullamcorper libero dolor auctor sit amet. Proin vulputate amet sem ut tempus. Donec quis ante viverra, suscipa facilisis at, vestibulum id urna. Lorem ipsum dolor sit amet sollicitudin.</p>
+                  <h2>További információk</h2>
+                  <p>A szállással kapcsolatos részletekről mindenkit időben értesíteni fogunk. A lagziból a szállásra tartóknak segítünk majd a fuvarozásban, kisbusszal juttatunk el mindenkit a célhoz, így javasoljuk, hogy mindenki a csárdához érkezzen, ahol a kulcsokat is át tudják majd venni. Reggel az autóhoz visszajutás részleteit a helyszínen egyeztetjük.</p>
                </div>
             </section>
 			
