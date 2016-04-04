@@ -28,8 +28,12 @@
                      
                      <p>A szertartás után vacsora, és lagzi kifulladásig ugyanitt.</p>
                   </section>
+                  <a class="arrow-wrap" href="#two" id="arrow">
+						<span class="arrow"></span>
+				  </a>
                </div>
             </section>
+
             
             <section id="two" class="features">
                <header class="major">
@@ -63,7 +67,9 @@
                      <p>Kérlek, hogyha van bármilyen speciális kívánságod a felszolgált étellel kapcsolatban, itt jelezd (allergia, érzékenység, anti-hús...)</p>
                      <textarea class="myinput biginput" name="foodSpeacialNeeds"></textarea>
                   </section>
-
+                  <a class="arrow-wrap" href="#three">
+						<span class="arrow"></span>
+				  </a>
                </div>
             </section>
             
@@ -86,6 +92,9 @@
 					<p>Valahol máshol</p>
 					<a href="http://likebalaton.hu/szallas/zabszalma-turistahaz-zanka" target="_blank" class="button" style="cursor: pointer;">Infó</a><br>
                   </section>
+                  <a class="arrow-wrap" href="#four">
+						<span class="arrow"></span>
+				  </a>
                </div>
             </section>
             
@@ -120,6 +129,9 @@
                     <h3>Fotó</h3>
                     <p>Az eseményen jelen lesz egy hivatásos fotós, ezért arra kérünk, segítsétsd a munkáját azzal, hogy hagyod érvényesülni, helyet adsz neki a fotózáshoz, még akkor is, ha éppen te magad szerettél volna lőni egy képet. Továbbá kérünk mindenkit, hogy amíg mi nem teszünk fel képet, ne töltsetek fel semmilyen közösségi médiára és portálra képeket, vagy videókat, mindenkivel meg fogjuk osztani az eseményről készült fotókat a maga idejében. Tisztelettel köszönjük!</p>
                   </section>
+                  <a class="arrow-wrap" href="#five" id="arrow">
+						<span class="arrow"></span>
+				  </a>
                </div>
             </section>
 			
