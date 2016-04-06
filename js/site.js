@@ -3,6 +3,7 @@ var Site = {
 		$('div.banner').fadeIn();
 					
 		$('div.wrongcode').css('display','none');
+		$('div.oveflowbg').css('display','none');
 		
 		//Code stolen from css-tricks for smooth scrolling:
 		$(function() {
@@ -31,12 +32,38 @@ var Site = {
 				success: function(response) {
 					//check response, and redirect
 					if(response=="OK"){
-						window.location = "Index";
+						window.location = "Index";					
+					}if(response=="USED"){
+						window.location = "Index?warning=1";
 					}else{
 						$('div.wrongcode').css('display','inherit');
 					}					
 				}
 			});
+		});
+		
+		$('a.submitform').click(function(){
+			$form = $(document.createElement('form'));
+			if($form.length < 1) return;
+			$form.append($(document.createElement('input')).val('Participant/submit').attr('name', 'method').attr('type', 'hidden'));
+			$("select").each(function(index){
+				$form.append($(document.createElement('input')).attr('name', $(this).attr('name')).val($(this).val()));
+			});
+			$("input.myinput").each(function(){$form.append($(this))});
+			$.ajax({
+				type: "POST",
+				url: 'Participant',
+				data: $form.serialize(),
+				success: function(response) {
+					$('div.oveflowbg').css('display','block');
+					$('header.usedcode').css('display','none');
+				}
+			});
+		});
+		
+		$kaki = $('header.successmessage');
+		$kaki.click(function(){
+			$('div.oveflowbg').css('display','none');
 		});
 	}
 	

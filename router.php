@@ -6,6 +6,7 @@ Page::render($PAGE_REQUEST);
 
 //functions
 function catchActions(){
+	//echo array_key_exists('method', $_POST);
 	if(!array_key_exists('method', $_POST)) return;
 	$action = explode('/', $_POST['method']);
 	require_once($action[0].'Action.php');

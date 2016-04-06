@@ -1,14 +1,25 @@
 <?php class ParticipantAction {
 	static function check(){
-		$used = Page::$db->getValue("SELECT free FROM codes WHERE code = ".Page::$db->escapeValue($_POST['code']));
-		if($used == 1){
+		$used = Page::$db->getRow("SELECT * FROM codes WHERE code = ".Page::$db->escapeValue($_POST['code']));
+		if($used["free"] == 1){
 			$_SESSION['participant'] = $_POST['code'];
+			$used["free"] = 2;
+			Page::$db->update("codes", $used, "code =".$used["code"] );
 			echo "OK";
+			die();
+		}else if($used["free"] == 2){
+			$_SESSION['participant'] = $_POST['code'];
+			echo "USED";
 			die();
 		}else {
 			echo "DENIED";
-			die(503);
+			die();
 		}
+	}
+	
+	static function submit(){
+			echo "SUCCESS";
+			die();
 	}
 }
 ?>

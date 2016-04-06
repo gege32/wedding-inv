@@ -12,8 +12,9 @@
 	}
 
 	function renderBody(){ ?>
-		<header> <?php $this->header(); ?> </header>
-		<div class="content"> <?php $this->content(); ?> </div>
+		<div class="page-wrapper"> 
+		<?php $this->header(); ?>
+		<?php $this->content(); ?> </div>
 	<?php }
 
 	function content(){}

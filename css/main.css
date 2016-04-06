@@ -1928,10 +1928,9 @@ section.hash:target>:last-child {
     }
 }
 .alert {
-    border-radius: 4px;
     cursor: default;
     display: block;
-    margin: 0 0 2em 0;
+    margin: 0 0 0 0;
     padding: 0.65em 0.75em;
     position: relative;
     line-height: 1.25em
@@ -1942,11 +1941,20 @@ section.hash:target>:last-child {
 }
 .alert.error {
     background: #d76262;
-    color: #fff
+    color: #fff;
+    margin: 0em 0em 2em 0em;
+}
+.alert.warning {
+	color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    text-align: center;
 }
 .alert.success {
     background: #89ca9d;
-    color: #fff
+    color: #fff;
+    margin: 10em 0em 0em 0em;
+    text-align: center;
 }
 .alert strong {
     color: inherit
@@ -3951,10 +3959,9 @@ ul.share li.google-plus {
     width: 100%;
     background: #fff;
     color: #fff;
-    height: 3em;
     line-height: 3em;
     z-index: 10001;
-    box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.15)
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 1)
 }
 #header h1 {
     line-height: inherit;

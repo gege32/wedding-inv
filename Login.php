@@ -17,7 +17,7 @@
 					<strong>A kód nem érvényes!</strong>
 				</div>
 				<ul class="actions">
-					<li><a class="button big submitcode" style="cursor: pointer;">Jelentkezes</a></li>
+					<li><a class="button big submitcode" style="cursor: pointer;">Jelentkezés</a></li>
 				</ul>
 			   </footer>
 			</section>

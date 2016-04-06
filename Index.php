@@ -3,6 +3,15 @@
 	function init(){ parent::init();
 		if(!isset($_SESSION['participant'])) Page::render('Login');
 	}
+	
+	function header(){ if($_GET["warning"] == 1){ ?>
+		<header id="header" class = "usedcode">
+			<div class="alert warning">
+				<strong>Figyelem! </strong>A kóddal már került leadásra jelentkezés, újabb mentés az előzőt felülírja!
+			</div>
+         </header>
+	<?php }
+	}
 
 	function content(){ ?>
 			<div id="main">
@@ -50,7 +59,7 @@
                      <span class="icon major fa-car"></span>
                      <h3>Utazás</h3>
 					<span class="custom-dropdown">
-						<select class="custom-dropdown__select">
+						<select name="travelOption" class="custom-dropdown__select">
 							<option value="-1">Kérjük válassz...</option>
 							<option value="0">Autóval jövök</option>
 							<option value="1">Autóval jövök, és tudok hozni másokat</option>
@@ -109,7 +118,7 @@
 					<h3>Szállás</h3>
 					<p>Kérünk, hogy csak abban az esetben folytasd a kitöltést, hogyha biztosan tudod már, hogy kérsz/nem kérsz szállást, mert ezek alapján fogjuk lefoglalni a szükséges mennyiségű férőhelyet! (Az utolsó dátum a pontos létszám leadásához: május 10)</p>
 					<span class="custom-dropdown">
-						<select class="custom-dropdown__select">
+						<select name="occupationOption" class="custom-dropdown__select">
 							<option value="-1">Kérjük válassz...</option>
 							<option value="0">Kérek szállást</option>
 							<option value="1">Nem kérek szállást</option>
@@ -139,17 +148,21 @@
                <div class="image"><img src="images/wedring.jpg" alt=""></div>
                <div class="content">
                   <h2>További információk</h2>
-                  <p>A szállással kapcsolatos részletekről mindenkit időben értesíteni fogunk. A lagziból a szállásra tartóknak segítünk majd a fuvarozásban, kisbusszal juttatunk el mindenkit a célhoz, így javasoljuk, hogy mindenki a csárdához érkezzen, ahol a kulcsokat is át tudják majd venni. Reggel az autóhoz visszajutás részleteit a helyszínen egyeztetjük.</p>
-               </div>
+                  <p>A szállással kapcsolatos részletekről mindenkit időben értesíteni fogunk. A lagziból a szállásra tartóknak segítünk majd a fuvarozásban, így célszerű, hogy mindenki a szállásához érkezzen, ahol lepakolhat, átöltözhet. Reggel az autóhoz visszajutás részleteit a helyszínen egyeztetjük.</p>
+                  <p>Kérünk, hogy csak abban az esetben kattints a befejezés gombra, hogyha biztos vagy azokban, amiket válaszoltál. Természetesen újra ki lehet tölteni a kérdőívet, de az felül fogja írni a korábbi adatokat
+                  <ul class="actions">
+					<li><a class="button big submitform" style="cursor: pointer;">Befejezés</a></li>
+				</ul>
+               </div>				   
             </section>
-			
-            <section id="six" class="spotlight alt">
-               <div class="image"><img src="images/wedring.jpg" alt=""></div>
-               <div class="content">
-                  <h2>Elit auctor tempus</h2>
-                  <p>Praesent egestas quam at lorem imperdiet lobortis. Mauris condimentum et euismod ipsum, at ullamcorper libero dolor auctor sit amet. Proin vulputate amet sem ut tempus. Donec quis ante viverra, suscipa facilisis at, vestibulum id urna. Lorem ipsum dolor sit amet sollicitudin.</p>
-               </div>
-            </section>
-            </div>
+            
+            <div name="overflowbg" class="oveflowbg" role="main">
+				<header class="major successmessage">
+                  <h2>Köszönjük a jelentkezést!</h2>
+                  <p>Az adatok sikeresen mentésre kerültek! Ha több meghívót kaptatok ne felejtsétek el azokat is regisztrálni!</p>
+               </header>
+			</div>
+            
+		</div>
 	<?php }
 } 
