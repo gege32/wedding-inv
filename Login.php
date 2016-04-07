@@ -13,7 +13,7 @@
 				<form class="codeCheck" method="POST">
 					<input class="" name="code" placeholder="***">
 				</form>
-				<div class="alert error wrongcode">
+				<div class="alert error wrongcode" style="display: none">
 					<strong>A kód nem érvényes!</strong>
 				</div>
 				<ul class="actions">

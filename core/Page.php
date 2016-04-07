@@ -22,6 +22,7 @@
 		</head>
 		<body>
 			<?php $this->renderBody();	?>
+			<script src="js/lightbox.js"></script>
 		</body>
 		</html>
 	<?php }

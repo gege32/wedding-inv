@@ -8,6 +8,7 @@
 		$this->styleIncludes[] = 'main.css';
 		$this->styleIncludes[] = 'extra.css';
 		$this->styleIncludes[] = 'dropdown.css';
+		$this->styleIncludes[] = 'lightbox.css';
 		
 	}
 

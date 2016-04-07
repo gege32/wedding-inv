@@ -2,9 +2,7 @@
 	static function check(){
 		$used = Page::$db->getRow("SELECT * FROM codes WHERE code = ".Page::$db->escapeValue($_POST['code']));
 		if($used["free"] == 1){
-			$_SESSION['participant'] = $_POST['code'];
-			$used["free"] = 2;
-			Page::$db->update("codes", $used, "code =".$used["code"] );
+			$_SESSION['participant'] = $_POST['code'];			
 			echo "OK";
 			die();
 		}else if($used["free"] == 2){
@@ -18,6 +16,10 @@
 	}
 	
 	static function submit(){
+		
+		$used = array();
+		$used["free"] = 2;
+		Page::$db->update("codes", $used, "code =".$_SESSION['participant'] );
 		
 		Page::$db->delete("participant", "invid = ".$_SESSION['participant']);
 		

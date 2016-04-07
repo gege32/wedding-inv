@@ -31,7 +31,7 @@
 
 .biginput{
 	width: 100%;
-	height: 9em;
+	height: 5em;
 	resize: none;
 	overflow: auto;
 }
@@ -184,6 +184,16 @@ border-color: rgba(17, 17, 17, 0);
 	
 }
 
+.smallimgwrap{
+	float: right;
+	margin: 0em 0em 0em 0em;
+	display: inline-block !important;
+	width: 50% !important;
+	box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 1);
+}
+.smallimg{
+	float: right;
+}
 
 html,
 body,
@@ -2967,6 +2977,7 @@ body.is-loading #banner footer {
 }
 #main .features {
     background-color: #32383f;
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 1);
 }
 #main .features .content {
     display: -moz-flex;
@@ -3020,6 +3031,7 @@ body.is-loading #banner footer {
     -ms-align-items: center;
     align-items: center;
     background-color: #32383f;
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 1);
 }
 #main .spotlight .image {
     width: 33.333333333%;

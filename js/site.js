@@ -81,6 +81,9 @@ var Site = {
 		$('a.close_error').click(function(){
 			$('div.unsuccess').css('display','none');
 		});
+		$('a.tostart').click(function(){
+			window.location = "Login";
+		});
 		
 	}
 	
