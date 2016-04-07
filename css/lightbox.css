@@ -197,6 +197,7 @@ body.lb-disable-scrolling {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  border-bottom: 0px !important;
 }
 
 .lb-data .lb-close:hover {
