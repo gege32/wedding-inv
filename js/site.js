@@ -76,10 +76,10 @@ var Site = {
 		});
 		
 		$('section.unsuccessmessage').click(function(){
-			$('div.overflowbg_error').css('display','none');
+			$('div.unsuccess').css('display','none');
 		});
 		$('a.close_error').click(function(){
-			$('div.overflowbg_error').css('display','none');
+			$('div.unsuccess').css('display','none');
 		});
 		
 	}
