@@ -18,8 +18,26 @@
 	}
 	
 	static function submit(){
+		
+		Page::$db->delete("participant", "invid = ".$_SESSION['participant']);
+		
+		$datatoinsert = array();
+		$datatoinsert["invid"] = $_SESSION['participant'];
+		$datatoinsert["name"] = $_POST['name'];
+		$datatoinsert["email"] = $_POST['email'];
+		$datatoinsert["travel"] = $_POST['travelOption'];
+		$datatoinsert["foodreq"] = $_POST['foodSpecialNeeds'];
+		$datatoinsert["occupation"] = $_POST['occupationOption'];
+		$datatoinsert["song"] = $_POST['song'];
+		
+		if(Page::$db->insert("participant", $datatoinsert)){
 			echo "SUCCESS";
-			die();
+		}		
+		else{
+			echo "ERROR";
+		}
+		
+		die();
 	}
 }
 ?>

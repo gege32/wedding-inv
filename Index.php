@@ -74,7 +74,7 @@
                      <p>Menü:</p>
                      <br>
                      <p>Kérlek, hogyha van bármilyen speciális kívánságod a felszolgált étellel kapcsolatban, itt jelezd (allergia, érzékenység, anti-hús...)</p>
-                     <textarea class="myinput biginput" name="foodSpeacialNeeds"></textarea>
+                     <textarea class="myinput biginput" name="foodSpecialNeeds"></textarea>
                   </section>
                   <a class="arrow-wrap" href="#three">
 						<span class="arrow"></span>
@@ -133,7 +133,7 @@
                     <span class="icon major fa-music"></span>
                     <h3>Lagzi</h3>
                     <p>Az este folyamán rock DJ fogja szolgáltatni a zenét. Itt van lehetőséged küldeni nekünk egy számot, így biztosan elérhető lesz, és lejátszuk :)</p>
-                    <input name="song" class="myinput" type="text">
+                    <input name="song" class="myinput" type="text"></input>
                     <span class="icon major fa-camera"></span>
                     <h3>Fotó</h3>
                     <p>Az eseményen jelen lesz egy hivatásos fotós, ezért arra kérünk, segítsétsd a munkáját azzal, hogy hagyod érvényesülni, helyet adsz neki a fotózáshoz, még akkor is, ha éppen te magad szerettél volna lőni egy képet. Továbbá kérünk mindenkit, hogy amíg mi nem teszünk fel képet, ne töltsetek fel semmilyen közösségi médiára és portálra képeket, vagy videókat, mindenkivel meg fogjuk osztani az eseményről készült fotókat a maga idejében. Tisztelettel köszönjük!</p>
@@ -157,10 +157,28 @@
             </section>
             
             <div name="overflowbg" class="oveflowbg" role="main">
-				<header class="major successmessage">
+            <section id="six" class="cta successmessage">
+               <header>
                   <h2>Köszönjük a jelentkezést!</h2>
-                  <p>Az adatok sikeresen mentésre kerültek! Ha több meghívót kaptatok ne felejtsétek el azokat is regisztrálni!</p>
+                  <p>Amennyiben több meghívót is kaptatok, ne felejtsétek azokat is regisztrálni!</p>
+                  <p>Találkozunk 2016 Július 1-én!</p>
                </header>
+               <ul class="actions">
+                  <li><a class="button big close" style="cursor: pointer;">Bezárás</a></li>
+               </ul>
+            </section>
+			</div>
+			
+			<div name="overflowbg_error" class="unsuccess" role="main">
+            <section id="seven" class="cta unsuccessmessage">
+               <header>
+                  <h2>HIBA</h2>
+                  <p>Nem sikerült elmenteni az adatokat!</p>
+               </header>
+               <ul class="actions">
+                  <li><a class="button big close_error" style="cursor: pointer;">Bezárás</a></li>
+               </ul>
+            </section>
 			</div>
             
 		</div>

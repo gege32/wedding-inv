@@ -4,6 +4,7 @@ var Site = {
 					
 		$('div.wrongcode').css('display','none');
 		$('div.oveflowbg').css('display','none');
+		$('div.unsuccess').css('display','none');
 		
 		//Code stolen from css-tricks for smooth scrolling:
 		$(function() {
@@ -49,22 +50,38 @@ var Site = {
 			$("select").each(function(index){
 				$form.append($(document.createElement('input')).attr('name', $(this).attr('name')).val($(this).val()));
 			});
+			$form.append($('textarea.myinput'));
 			$("input.myinput").each(function(){$form.append($(this))});
 			$.ajax({
 				type: "POST",
 				url: 'Participant',
 				data: $form.serialize(),
 				success: function(response) {
-					$('div.oveflowbg').css('display','block');
-					$('header.usedcode').css('display','none');
+					if(response=="SUCCESS"){
+						$('div.oveflowbg').css('display','block');
+						$('header.usedcode').css('display','none');				
+					}else{
+						$('header.usedcode').css('display','none');	
+						$('div.unsuccess').css('display','block');
+					}
 				}
 			});
 		});
-		
-		$kaki = $('header.successmessage');
-		$kaki.click(function(){
+
+		$('section.successmessage').click(function(){
 			$('div.oveflowbg').css('display','none');
 		});
+		$('a.close').click(function(){
+			$('div.oveflowbg').css('display','none');
+		});
+		
+		$('section.unsuccessmessage').click(function(){
+			$('div.overflowbg_error').css('display','none');
+		});
+		$('a.close_error').click(function(){
+			$('div.overflowbg_error').css('display','none');
+		});
+		
 	}
 	
 };

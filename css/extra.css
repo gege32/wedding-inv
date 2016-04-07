@@ -144,8 +144,44 @@ border-color: rgba(17, 17, 17, 0);
     margin-bottom: 0em !important;
 }
 
+[name=overflowbg_error]{
+	margin: 0 0 0 0;
+    width: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: block;
+    visibility: visible;
+    color: #fff;
+    font-family: arial,sans-serif;
+    overflow: hidden;
+    opacity: 1;
+    transition-delay: 0s,0s;
+    overflow: hidden;
+    z-index: 1001;
+    background-color: #1e1e1e;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: alpha(opacity=93);
+    opacity: .93;
+    margin-bottom: 0em !important;
+}
+
 .successmessage{
 	margin: 5em 5em 5em 5em !important;
+	background: rgba(0, 0, 0, 0.46);
+	padding: 2em 2em 2em 2em;
+	
+}
+
+.unsuccessmessage{
+	margin: 5em 5em 5em 5em !important;
+	background: rgba(0, 0, 0, 0.46);
+	padding: 2em 2em 2em 2em;
+	
 }
 
 
