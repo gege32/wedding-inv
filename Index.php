@@ -88,8 +88,9 @@
                   <section class="feature2">
                     <span class="icon major fa-bed"></span>
 					<h3>Szállás 2</h3>
-					<p>Valahol máshol</p>
-					<a href="http://likebalaton.hu/szallas/zabszalma-turistahaz-zanka" target="_blank" class="button" style="cursor: pointer;">Infó</a><br>
+					<p>Philip-Cindy Vendégház Örvényesen</p>
+					<a href="http://www.zimmerinfo.hu/orvenyes/philip-cindy/hu.htm" target="_blank" class="button" style="cursor: pointer;">Infó</a><br>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2725.3210774462273!2d17.812555015606705!3d46.916069079144854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4769a4aaf2de5147%3A0xcff2f4be20dde873!2zRmVueXZlcyB1LiA4LCDDlnJ2w6lueWVzLCA4MjQy!5e0!3m2!1sen!2shu!4v1460101186076" width="400" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                   </section>
                   <a class="arrow-wrap" href="#four">
 						<span class="arrow"></span>
@@ -131,7 +132,7 @@
                     <h3>Lagzi</h3>
                     <p>A vacsora után várunk mindenki az ugyanitt tartandó lakodalomra!</p>
                     <p>Itt van lehetőséged küldeni nekünk egy számot, így biztosan elérhető lesz, és lejátszuk :)</p>
-                    <input name="song" class="myinput" type="text"></input>
+                    <input name="song" class="myinput" type="text"></input>          
                   </section>
                   <a class="arrow-wrap" href="#five" id="arrow">
 						<span class="arrow"></span>
@@ -155,6 +156,7 @@
                     <span class="icon major fa-camera"></span>
                     <h3>Fotó</h3>
                     <p>Az eseményen jelen lesz egy hivatásos fotós, ezért arra kérünk, segítsétsd a munkáját azzal, hogy hagyod érvényesülni, helyet adsz neki a fotózáshoz, még akkor is, ha éppen te magad szerettél volna lőni egy képet. Továbbá kérünk mindenkit, hogy amíg mi nem teszünk fel képet, ne töltsetek fel semmilyen közösségi médiára és portálra képeket, vagy videókat, mindenkivel meg fogjuk osztani az eseményről készült fotókat a maga idejében. Tisztelettel köszönjük!</p>
+                    <div style="float: left;" class="image smallimgwrap"><a class="" href="images/tg3.jpg" data-lightbox="Tami és Gergő"><img class="smallimg" src="images/tg3.jpg" alt="Tami és Gergő" /></a></div>
                   </section>
                   <a class="arrow-wrap" href="#six" id="arrow">
 						<span class="arrow"></span>
